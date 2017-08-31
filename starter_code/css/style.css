@@ -280,10 +280,36 @@ section#register h2 {
 
 }
 
-form {
+/*form {
   display: flex;
+  flex-direction: column;
   justify-content:space-between;
   padding: 50px;
+} */
+
+div.row {
+  display: flex;
+  justify-content: space-around;
+} 
+
+label.radio {
+  padding: 0; fixxxx
+}
+
+div.radio {
+  display: flex;
+  padding: 10px;
+  width: 400px;
+  /* BARRY: can't figure out why this div wont align/ flex-end right AND why I can't get the labels to be even with the readio buttons */
+}
+
+/* BARRY: ALSO HOW DO I GO ABOUT POPULATING THE DROPDOWN? */
+
+label {
+  width: 65px;
+  text-align: right;
+  padding-right: 100px;
+  padding-top: 10px;
 }
 
 input {
@@ -291,12 +317,12 @@ input {
   padding: 10px;
 }
 
-div#form-box {
+/* div#form-box {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  /* align-items: flex-end; */
-}
+   align-items: flex-end; 
+} 
 
 div#titles {
   flex-direction: column;
@@ -310,14 +336,11 @@ div#radio {
   padding: 10px 10px 10px 0;
 }
 
-label {
-  /* BARRY: NEED HELP GETTING FOR LABEL RADIO BUTTONS NOT SO SPACED OUT*/
-}
+*/
 
 div#register-button {
-  margin-right: 300px;
-  margin-left: 250px;
-    /* *************** BARRY: off-center HOW DO I AUTOFIX THIS? **************** */
+  padding: 10px 340px 10px 340px;
+  margin: 0;
 }
 
 
