@@ -290,30 +290,32 @@ section#register h2 {
 div.row {
   display: flex;
   justify-content: space-around;
+  padding: 0 25%;
 } 
 
 label.radio {
-  padding: 0; fixxxx
+  padding: 0; 
 }
 
 div.radio {
   display: flex;
-  padding: 10px;
-  width: 400px;
-  /* BARRY: can't figure out why this div wont align/ flex-end right AND why I can't get the labels to be even with the readio buttons */
+  padding-top: 10px;
+  flex: 1;
 }
 
-/* BARRY: ALSO HOW DO I GO ABOUT POPULATING THE DROPDOWN? */
 
 label {
-  width: 65px;
+  /* width: 65px; */
   text-align: right;
-  padding-right: 100px;
-  padding-top: 10px;
+  padding-right: 25px;
+}
+
+.row > label {
+  flex: 1;
 }
 
 input {
-  width: 400px;
+  flex: 1;
   padding: 10px;
 }
 
@@ -339,8 +341,12 @@ div#radio {
 */
 
 div#register-button {
-  padding: 10px 340px 10px 340px;
-  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button.button.primary {
+  margin: 0 auto;
 }
 
 
@@ -460,4 +466,27 @@ body.blog .container { /* targets elements with class of container, that are des
 body.blog aside img{
   max-height: none;
 }
+ /* REGISTER */
+
+.radio.row {
+  flex-direction: column;
 }
+
+.row > label {
+  flex: auto;
+}
+
+label {
+  text-align: center;
+}
+
+div.radio {
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+
+div.row {
+  padding: 5px 10%;
+}
+
